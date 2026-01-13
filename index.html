@@ -17,30 +17,34 @@
       line-height: 1.6;
     }
 
-    /* Hero */
+    /* Header image */
     header {
       position: relative;
+      width: 100%;
       height: 80vh;
       background: url('SSG_Header.png') center/cover no-repeat;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; /* centers vertically */
-      align-items: center;
+    }
+
+    /* Hero text below image */
+    .hero-text {
+      max-width: 900px;
+      margin: -100px auto 40px auto; /* pull up slightly for visual overlap */
+      padding: 20px;
       text-align: center;
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+      margin: 0 0 15px 0;
       color: #fff;
       text-shadow: 0 2px 6px rgba(0,0,0,0.7);
-      padding-top: 0; /* removed logo padding */
-      padding-bottom: 50px;
     }
 
-    header h1 {
-      font-size: 3.5rem;
-      margin: 0 20px 20px 20px;
-    }
-
-    header p {
+    .hero-text p {
       font-size: 1.5rem;
-      margin-top: 15px;
+      margin: 0;
+      color: #fff;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.6);
     }
 
     /* Sections */
@@ -105,7 +109,6 @@
       background: #005fd1;
     }
 
-    /* Footer note */
     .contact p {
       font-size: 0.8rem;
       color: #aaa;
@@ -115,19 +118,22 @@
 
     /* Responsive */
     @media (max-width: 768px) {
-      header h1 { font-size: 2.5rem; }
-      header p { font-size: 1.2rem; }
+      .hero-text h1 { font-size: 2.5rem; }
+      .hero-text p { font-size: 1.2rem; }
       section { margin: 20px; padding: 30px 15px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Hero -->
-  <header>
+  <!-- Header image -->
+  <header></header>
+
+  <!-- Hero text below image -->
+  <div class="hero-text">
     <h1>Shadow Stream Games</h1>
     <p>Immersive visual novels & storytelling experiences.</p>
-  </header>
+  </div>
 
   <!-- About -->
   <section>
