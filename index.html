@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shadow Stream Games</title>
-  <!-- Google Fonts: clean modern sans-serif -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Fonts: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      margin:0;
-      font-family: 'Inter', sans-serif;
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
       background: #0f0f0f;
       color: #fff;
       line-height: 1.6;
@@ -22,23 +24,28 @@
       background: url('SSG_Header.png') center/cover no-repeat;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: center; /* centers vertically */
       align-items: center;
       text-align: center;
       color: #fff;
       text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+      padding-top: 50px; /* push text below logo */
+      padding-bottom: 50px;
     }
+
     header img {
       height: 80px;
       margin-bottom: 20px;
     }
+
     header h1 {
       font-size: 3.5rem;
-      margin: 0 20px;
+      margin: 20px 20px 0 20px; /* margin-top added */
     }
+
     header p {
       font-size: 1.5rem;
-      margin-top: 10px;
+      margin-top: 15px;
     }
 
     /* Sections */
@@ -50,11 +57,13 @@
       border-radius: 12px;
       box-shadow: 0 8px 24px rgba(0,0,0,0.4);
     }
+
     section h2 {
       font-size: 2rem;
       margin-bottom: 15px;
       color: #eaeaea;
     }
+
     section p {
       font-size: 1.1rem;
       color: #ddd;
@@ -77,14 +86,18 @@
       border: none;
       border-radius: 6px;
       font-size: 1rem;
+      font-family: 'Montserrat', sans-serif;
     }
+
     .contact input, .contact textarea {
       background: rgba(255,255,255,0.1);
       color: #fff;
     }
+
     .contact input::placeholder, .contact textarea::placeholder {
       color: rgba(255,255,255,0.7);
     }
+
     .contact button {
       background: #0078ff;
       color: #fff;
@@ -92,6 +105,7 @@
       font-weight: 600;
       transition: 0.3s;
     }
+
     .contact button:hover {
       background: #005fd1;
     }
@@ -110,7 +124,6 @@
       header p { font-size: 1.2rem; }
       section { margin: 20px; padding: 30px 15px; }
     }
-
   </style>
 </head>
 <body>
@@ -119,19 +132,19 @@
   <header>
     <img src="SSG_Logo.png" alt="Shadow Stream Games Logo">
     <h1>Shadow Stream Games</h1>
-    <p>Immersive visual novels & storytelling experiences</p>
+    <p>Immersive visual novels & storytelling experiences.</p>
   </header>
 
   <!-- About -->
   <section>
     <h2>About Us</h2>
-    <p>Shadow Stream Games is an indie studio dedicated to crafting realistic, immersive visual novels that transport players into cinematic narratives.</p>
+    <p>Shadow Stream Games is an indie studio dedicated to crafting immersive visual novels that transport players into adult themed experiences.</p>
   </section>
 
   <!-- Current Project -->
   <section>
     <h2>Current Project</h2>
-    <p>Our current title: <strong>Stranger In A Stranger Land</strong> — a story-driven visual novel set in Japan, blending mystery and romance.</p>
+    <p>Our current title is <strong>Stranger In A Stranger Land</strong>, a story-driven visual novel set in Japan, blending mystery and romance.</p>
     <img src="https://via.placeholder.com/800x400?text=Project+Screenshot" alt="Stranger In A Stranger Land screenshot" class="content-image">
   </section>
 
