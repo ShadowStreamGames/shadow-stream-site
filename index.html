@@ -81,6 +81,18 @@
       box-shadow: 0 4px 16px rgba(0,0,0,0.5);
     }
 
+    .image-row {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+
+    .image-row img {
+      max-width: 30%;
+    }
+
     /* Contact Form */
     .contact input,
     .contact textarea,
@@ -144,6 +156,14 @@
         margin: 20px;
         padding: 30px 15px;
       }
+      .image-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-row img {
+        max-width: 80%;
+      }
     }
   </style>
 </head>
@@ -168,8 +188,10 @@
   <section>
     <h2>Current Project</h2>
     <p>Our current title is <strong>Stranger In A Stranger Land</strong>, a story-driven visual novel blending mystery and romance.</p>
-    <div style="text-align: center;">
-      <img src="images/tsubaki_sprite.png" alt="Stranger In A Stranger Land, Tsubaki" class="content-image">
+    <div class="image-row">
+      <img src="images/tsubaki_sprite.png" alt="Tsubaki" class="content-image">
+      <img src="images/protagonist_sprite.png" alt="Our hero" class="content-image">
+      <img src="images/miyuki_sprite.png" alt="Miyuki" class="content-image">
     </div>
   </section>
 
