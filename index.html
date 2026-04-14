@@ -9,6 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
+    /* =========================
+       GLOBAL STYLES (applies everywhere)
+    ========================= */
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -17,9 +20,10 @@
       line-height: 1.6;
     }
 
-    /* Header image */
+    /* =========================
+       HEADER / HERO IMAGE
+    ========================= */
     header {
-      position: relative;
       width: 100%;
       height: 60vh;
       min-height: 320px;
@@ -30,29 +34,30 @@
       background-repeat: no-repeat;
     }
 
-    /* Hero text below image */
+    /* =========================
+       HERO TEXT
+    ========================= */
     .hero-text {
       max-width: 900px;
-      margin: 40px auto 40px auto;
+      margin: 40px auto;
       padding: 20px;
       text-align: center;
     }
 
     .hero-text h1 {
       font-size: 3.5rem;
-      margin: 0 0 15px 0;
-      color: #fff;
+      margin-bottom: 15px;
       text-shadow: 0 2px 6px rgba(0,0,0,0.7);
     }
 
     .hero-text p {
       font-size: 1.5rem;
-      margin: 0;
-      color: #fff;
       text-shadow: 0 1px 4px rgba(0,0,0,0.6);
     }
 
-    /* Sections */
+    /* =========================
+       CONTENT SECTIONS
+    ========================= */
     section {
       background: rgba(20,20,20,0.7);
       max-width: 900px;
@@ -73,27 +78,61 @@
       color: #ddd;
     }
 
-    /* Images */
-    img.content-image {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 20px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.5);
-    }
-
+    /* =========================
+       IMAGE ROW
+    ========================= */
     .image-row {
       display: flex;
       gap: 20px;
       justify-content: center;
-      align-items: flex-start;
       margin-top: 20px;
     }
 
     .image-row img {
       max-width: 30%;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.5);
     }
 
-    /* Contact Form */
+    /* =========================
+       SOCIAL SECTION (NEW)
+    ========================= */
+    .social-section {
+      text-align: center;
+    }
+
+    .social-section p {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .socials {
+      margin-top: 20px;
+    }
+
+    .socials a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 10px;
+      padding: 10px 14px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 8px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: transform 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+    }
+
+    .socials a:hover {
+      transform: scale(1.08);
+      background: rgba(255,255,255,0.1);
+      opacity: 1;
+    }
+
+    /* =========================
+       CONTACT FORM
+    ========================= */
     .contact input,
     .contact textarea,
     .contact button {
@@ -137,7 +176,9 @@
       margin-top: -10px;
     }
 
-    /* Responsive */
+    /* =========================
+       RESPONSIVE (MOBILE)
+    ========================= */
     @media (max-width: 768px) {
       header {
         height: 35vh;
@@ -156,6 +197,7 @@
         margin: 20px;
         padding: 30px 15px;
       }
+
       .image-row {
         flex-direction: column;
         align-items: center;
@@ -167,35 +209,46 @@
     }
   </style>
 </head>
+
 <body>
 
-  <!-- Header image -->
   <header></header>
 
-  <!-- Hero text below image -->
   <div class="hero-text">
     <h1>Shadow Stream Games</h1>
     <p>Immersive visual novels & storytelling experiences.</p>
   </div>
 
-  <!-- About -->
   <section>
     <h2>About Us</h2>
     <p>Shadow Stream Games is an indie studio dedicated to crafting immersive visual novels that transport players into adult-themed experiences and narrative driven 3D games.</p>
   </section>
 
-  <!-- Current Project -->
   <section>
     <h2>Current Project</h2>
-    <p>Our current title is <strong>Stranger In A Stranger Land</strong>, a story-driven visual novel blending mystery and romance. We also have an as yet unnamed project in its discovery phase which will be a 3D adventure game with meaningful decisions and consequences. </p>
+    <p>Our current title is <strong>Stranger In A Stranger Land</strong>, a story-driven visual novel blending mystery and romance.</p>
+
     <div class="image-row">
-      <img src="images/tsubaki_sprite.png" alt="Tsubaki" class="content-image">
-      <img src="images/protagonist_sprite.png" alt="Our hero" class="content-image">
-      <img src="images/miyuki_sprite.png" alt="Miyuki" class="content-image">
+      <img src="images/tsubaki_sprite.png" alt="Tsubaki">
+      <img src="images/protagonist_sprite.png" alt="Our hero">
+      <img src="images/miyuki_sprite.png" alt="Miyuki">
     </div>
   </section>
 
-  <!-- Contact -->
+  <section class="social-section">
+    <h2>Follow Development</h2>
+    <p>Get updates, previews, and progress on our projects.</p>
+
+    <div class="socials">
+      <a href="https://x.com/YourHandle" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M18.244 2H21l-6.5 7.43L22 22h-6.828l-5.35-6.987L3.5 22H1l6.938-7.93L2 2h6.828l4.86 6.37L18.244 2Z"/>
+        </svg>
+        X
+      </a>
+    </div>
+  </section>
+
   <section class="contact">
     <h2>Contact Us</h2>
     <form method="POST" action="https://formspree.io/f/xeeeqzya">
