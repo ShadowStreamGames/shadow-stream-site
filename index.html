@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -97,7 +98,7 @@
     }
 
     /* =========================
-       SOCIAL SECTION (NEW)
+       SOCIAL SECTION
     ========================= */
     .social-section {
       text-align: center;
@@ -108,6 +109,53 @@
       font-size: 14px;
     }
 
+    /* =========================
+       DISCORD CTA
+    ========================= */
+    .discord-cta {
+      margin: 30px auto;
+      max-width: 650px;
+    }
+
+    .discord-cta a {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 24px;
+      background: rgba(88, 101, 242, 0.15);
+      border: 1px solid rgba(88, 101, 242, 0.4);
+      border-radius: 10px;
+      color: #fff;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .discord-cta a:hover {
+      transform: translateY(-2px);
+      background: rgba(88, 101, 242, 0.25);
+    }
+
+    .discord-cta svg {
+      width: 36px;
+      height: 36px;
+      flex-shrink: 0;
+    }
+
+    .discord-cta strong {
+      display: block;
+      font-size: 1.05rem;
+    }
+
+    .discord-cta span {
+      display: block;
+      margin-top: 3px;
+      color: #bbb;
+      font-size: 0.85rem;
+    }
+
+    /* =========================
+       SOCIAL LINKS
+    ========================= */
     .socials {
       margin-top: 20px;
     }
@@ -208,6 +256,18 @@
       .image-row img {
         max-width: 80%;
       }
+
+      .discord-cta a {
+        padding: 16px 18px;
+      }
+
+      .discord-cta strong {
+        font-size: 0.95rem;
+      }
+
+      .discord-cta span {
+        font-size: 0.8rem;
+      }
     }
   </style>
 </head>
@@ -226,31 +286,31 @@
     <p>Shadow Stream Games is an indie studio dedicated to crafting immersive visual novels that transport players into adult-themed experiences and narrative driven games.</p>
   </section>
 
-<section>
+  <section>
 
-  <nav>
-    <a href="/">Home</a> |
-    <a href="/stranger/">Game</a> |
-    <a href="/devlog/">Devlog</a>
-  </nav>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/stranger/">Game</a> |
+      <a href="/devlog/">Devlog</a>
+    </nav>
 
-  <h2>Current Project</h2>
+    <h2>Current Project</h2>
 
-  <p>
-    Our current title is
-    <a href="/stranger/">
-      <strong>Stranger In A Stranger Land</strong>
-    </a>,
-    a story-driven visual novel blending mystery and romance.
-  </p>
+    <p>
+      Our current title is
+      <a href="/stranger/">
+        <strong>Stranger In A Stranger Land</strong>
+      </a>,
+      a story-driven visual novel blending mystery and romance.
+    </p>
 
-  <div class="image-row">
-    <img src="images/tsubaki_sprite.png" alt="Tsubaki">
-    <img src="images/protagonist_sprite.png" alt="Our hero">
-    <img src="images/miyuki_sprite.png" alt="Miyuki">
-  </div>
+    <div class="image-row">
+      <img src="images/tsubaki_sprite.png" alt="Tsubaki">
+      <img src="images/protagonist_sprite.png" alt="Our hero">
+      <img src="images/miyuki_sprite.png" alt="Miyuki">
+    </div>
 
-</section>
+  </section>
 
   <section class="social-section">
     <h2>Follow Development</h2>
@@ -269,17 +329,29 @@
       <a href="/devlog/"><strong>→ Read Devlog</strong></a>
     </p>
 
+    <div class="discord-cta">
+      <a href="/#contact">
+        <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor" aria-hidden="true">
+          <path d="M19.54 0.98A18.17 18.17 0 0 0 15.07 0L14.5 1.17a16.66 16.66 0 0 0-5 0L8.93 0a18.17 18.17 0 0 0-4.47.98C1.62 5.24.84 9.39 1.23 13.49a18.12 18.12 0 0 0 5.46 2.76l1.32-1.82c-.73-.27-1.44-.62-2.1-1.02l.51-.39a12.91 12.91 0 0 0 11.16 0l.51.39c-.66.4-1.37.75-2.1 1.02l1.32 1.82a18.12 18.12 0 0 0 5.46-2.76c.39-4.1-.39-8.25-3.23-12.51ZM8.02 11.4c-1.1 0-2-.99-2-2.21s.88-2.21 2-2.21 2 .99 2 2.21-.9 2.21-2 2.21Zm7.96 0c-1.1 0-2-.99-2-2.21s.88-2.21 2-2.21 2 .99 2 2.21-.9 2.21-2 2.21Z"/>
+        </svg>
+        <div>
+          <strong>Join the Shadow Stream Games Discord</strong>
+          <span>Follow development, chat about the game, and get involved.</span>
+        </div>
+      </a>
+    </div>
+
     <div class="socials">
       <a href="https://x.com/shadowstreamg" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
           <path d="M18.244 2H21l-6.5 7.43L22 22h-6.828l-5.35-6.987L3.5 22H1l6.938-7.93L2 2h6.828l4.86 6.37L18.244 2Z"/>
         </svg>
-       Follow on  X
+        Follow on X
       </a>
     </div>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <h2>Contact Us</h2>
     <form method="POST" action="https://formspree.io/f/xeeeqzya">
       <input type="text" name="name" placeholder="Your Name" required>
@@ -292,3 +364,4 @@
 
 </body>
 </html>
+```
